@@ -1,23 +1,24 @@
 <html>
 <head>
-<style>
-body {
-  background-image: url('img_girl.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<h2>xin chao</h2>
+<h2>The picture Element</h2>
 
-<p>toi ten do thu thuy 2021050893</p>
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg" style="width:auto;">
+</picture>
+
+<p>xin chao</p>
+
+<p>toi ten do thu thuy 2021050893
+</p>
 
 </body>
 </html>
-
 
 
 
