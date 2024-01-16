@@ -1,10 +1,24 @@
 <html>
 <head>
-<style> 
-#borderimg { 
-  border: 10px solid transparent;
-  padding: 15px;
-  border-image: url(border.png) 30 round;
+<style>
+#example1 {
+  border: 10px dotted black;
+  padding: 35px;
+  background: yellow;
+}
+
+#example2 {
+  border: 10px dotted black;
+  padding: 35px;
+  background: yellow;
+  background-clip: padding-box;
+}
+
+#example3 {
+  border: 10px dotted black;
+  padding: 35px;
+  background: yellow;
+  background-clip: content-box;
 }
 </style>
 </head>
@@ -12,11 +26,25 @@
 
 <h1>dothuthuy 2021050893</h1>
 
-<p>namdinh</p>
-<p id="borderimg">2021050893</p>
+<p>namdinht):</p>
+<div id="example1">
+  <h2>dothuthuy 2021050893</h2>
+  <p>namdinh</p>
+</div>
 
-<p>namdinh</p><img src="border.png">
-<p><strong>Note:</strong> dothuthuy</p>
+<p>dothuthuy 221050893</p>
+<div id="example2">
+  <h2>namdinh</h2>
+  <p>22 tuoi</p>
+</div>
+
+<p>dothuthuy 2021050893:</p>
+<div id="example3">
+  <h2>namdinh</h2>
+  <p>ha noi</p>
+</div>
 
 </body>
 </html>
+
+
