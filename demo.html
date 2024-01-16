@@ -1,29 +1,43 @@
 <html>
-<head>
-<style> 
-div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 
-@keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 </style>
-</head>
-<body>
+<body style="text-align:center;">
 
-<h1>dothuthuy 2021050893</h1>
+<h2>dothuthuy 2021050893</h2>
+<p>toi sinh ra o nam dinh.</p>
 
-<div></div>
-
-<p><b>Note:</b>nam dinh</p>
+<div class="tooltip">xin chao
+  <span class="tooltiptext">22 tuoi</span>
+</div>
 
 </body>
 </html>
-
-
