@@ -1,60 +1,25 @@
 <html>
+<head>
 <style>
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+body {
+  counter-reset: section;
 }
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
 }
 </style>
+</head>
 <body>
 
-<h3>dothuthuy 2021050893</h3>
+<h1>dothuthuy 2021050893</h1>
 
-<div>
-  <form action="/action_page.php">
-    <label for="fname">ten</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">ten thuong goi</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="city">tinh</label>
-    <select id="city" name="city">
-      <option value="australia">namdinh</option>
-      <option value="canada">hanam</option>
-      <option value="usa">thaibinh</option>
-    </select>
-  
-    <input type="submit" value="Submit">
-  </form>
-</div>
+<h2>namdinh</h2>
+<h2>ninh binh</h2>
+<h2>thaibinh</h2>
+<h2>hoabinh</h2>
+<h2>hanoi</h2>
 
 </body>
 </html>
-
-
