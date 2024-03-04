@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Program
 {
-    class ToanTu
+    class ToanTuSosanh
 {
     static void Main()
     {
@@ -14,24 +14,17 @@ namespace Program
         Console.WriteLine(" b = ");
         int  b = Convert.ToInt32(Console.ReadLine());
 
-        int tong = a + b;
-        int hieu = a -b;
-        int tich = a * b;
-
-        Console.WriteLine($"Tong {a} + {b} = {tong}");
-        Console.WriteLine($"Hieu {a} - {b} = {hieu}");
-        Console.WriteLine($"Tich {a} * {b} = {tich}");
-
-        if (b != 0)
+    
+        if (a < b)
         {
-            float thuong = (float)a /b;
-            int du =a % b;
-            Console.WriteLine($"Thuong {a} / {b} = {thuong}");
-            Console.WriteLine($" Phan du {a} % {b} = {du}");
-        }else
+            Console.WriteLine($"{a} < {b}");
+        }else if(a == b)
         {
-        Console.WriteLine("Khong thuc hien duoc phep chia va phep lay du");
-    }
+        Console.WriteLine($" {a} == {b}");
+    }else
+    {
+    Console.WriteLine($"{a} > {b}");
+}
 }
 }
 }
