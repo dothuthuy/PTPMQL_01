@@ -1,30 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-namespace Program
+﻿public class Program
 {
-    class ToanTuSosanh
-{
-    static void Main()
+    private static void Main(string[] args)
     {
-        Console.WriteLine(" a = ");
-        int a = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine(" b = ");
-        int  b = Convert.ToInt32(Console.ReadLine());
-
-    
-        if (a < b)
-        {
-            Console.WriteLine($"{a} < {b}");
-        }else if(a == b)
-        {
-        Console.WriteLine($" {a} == {b}");
-    }else
-    {
-    Console.WriteLine($"{a} > {b}");
-}
-}
-}
+    float a =10;
+    if(a >= 8){
+        System.Console.WriteLine("Hoc sinh hoc luc gioi");
+    }else if(a >= 6.5){
+        System.Console.WriteLine("Hoc sinh hoc luc kha");
+    }else if(a >= 5){
+        System.Console.WriteLine("Hoc sinh hoc luc trung binh");
+    }else if(a >= 3.5){
+        System.Console.WriteLine("Hoc sinh hoc luc yeu");
+    }else{
+        System.Console.WriteLine("Hoc sinh hoc luc kem");
+    }
+    }
 }
