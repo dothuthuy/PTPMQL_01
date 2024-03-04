@@ -1,22 +1,13 @@
-﻿using System;
-namespace ToanTu
+﻿
+public class Program
 {
- class Program
-{
-    static void Main(string[] args)
+      private static void Main(string[] args)
     {
-        int a;
-        int b;
-
-        Console.Write(" a = 5 ");
+        int a,b;
+        System.Console.Write(" a = ");
         a = Convert.ToInt32(Console.ReadLine());
-        Console.Write(" b = 7 ");
+        System.Console.Write(" b = ");
         b = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("{0} + {1} = {2}", a , b , a+b );
+        System.Console.WriteLine("{0} - {1} = {2}",a,b,a-b);
     }
 }
-}
-
-
-  
-    
