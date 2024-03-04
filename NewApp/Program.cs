@@ -3,8 +3,8 @@
     private static void Main(string[] args)
     {
         Console.Write("Nhap vao du lieu: ");
-        string str = Console.ReadLine();
-        Console.WriteLine("Du lieu vua nhap vao la: " + str);
+        int a = Console.Read();
+        Console.WriteLine("Du lieu vua nhap vao la: " + a);
     }
 } 
   
