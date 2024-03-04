@@ -2,9 +2,9 @@
 {
     private static void Main(string[] args)
     {
-        string hoTen = "Nguyen Van A";
-        int tuoi = 18;
-        Console.WriteLine("Sinh vien {0} -{1} tuoi",hoTen,tuoi);
+        int a = 10;
+        float b = a;
+        System.Console.WriteLine("b=" + b);
     }
 }
   
