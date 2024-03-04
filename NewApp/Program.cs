@@ -1,2 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.Write(6);
+int a=9;
+Console.WriteLine("a="+a);
+
