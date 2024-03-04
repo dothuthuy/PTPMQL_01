@@ -1,5 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-int a = 9;
-int b = 3;
-Console.WriteLine("{0}+{1}={2}",a,b,a+b);
-
+﻿internal class Program
+{ 
+    private static void Main(string[] args)
+    {
+        Console.Write("Nhap vao du lieu: ");
+        string str = Console.ReadLine();
+        Console.WriteLine("Du lieu vua nhap vao la: " + str);
+    }
+} 
+  
+    
