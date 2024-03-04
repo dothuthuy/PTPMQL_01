@@ -2,9 +2,9 @@
 {
     private static void Main(string[] args)
     {
-        int a = 10;
-        float b = a;
-        System.Console.WriteLine("b=" + b);
+        string str = "123";
+        int a = int.Parse(str);
+        System.Console.WriteLine("a=" + a);
     }
 }
   
