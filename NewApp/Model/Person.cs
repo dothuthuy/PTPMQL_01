@@ -15,6 +15,12 @@ public void EnterData()
     System.Console.Write("Age = " );
     Age = Convert.ToInt16(Console.ReadLine());
 }
+public Person()
+{
+    FullName = "Ho ten mac dinh";
+    Address = "Dia chi mac dinh";
+    Age = 20;
+}
 public void Display2(string ten, int tuoi)
     {
     System.Console.WriteLine("{0} -{1} tuoi", ten, tuoi);
