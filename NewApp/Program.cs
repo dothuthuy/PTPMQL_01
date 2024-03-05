@@ -1,11 +1,11 @@
-﻿public class Program
-{
-    private static void Main(string[] args)
-{
- int a = 1;
- do
- {
-    System.Console.WriteLine("Vong lap thu {0}", a);
- }while(a < 10);
-}
-}
+﻿using System.ComponentModel.Design.Serialization;
+using NEWAPP.Model;
+
+    public class Program
+    {
+        private static void Main(string[] args)
+        {
+            Person ps1 = new Person ();
+            Person ps2 = new Person ();
+        }
+    }
