@@ -9,6 +9,6 @@ using NEWAPP.Model;
             Person ps = new Person();
             string str = "Do Thu Thuy";
             int a = 22;
-            Console.WriteLine("{0} sinh nam {1}", str , ps. GetYearOfBirth(a));
+            Console.WriteLine("{0} sinh nam {1}", str , ps.GetYearOfBirth(a));
         }
     }
