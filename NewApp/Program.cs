@@ -5,15 +5,17 @@ using NEWAPP.Model;
     {
         private static void Main(string[] args)
         {
-            Person ps1 = new Person ();
-            Person ps2 = new Person ();
-            ps1.FullName = "Nguyen Van A";
-            ps1.Address = " Ha Noi";
-            ps1.Age = 18;
+            Employee ps1 = new Employee ();
+            Employee ps2 = new Employee ();
+            ps1.manhanvien = 21;
+            ps1.Ten = " Nguyen Van A";
+            ps1.Tuoi = 18;
+            ps1.Luong = 3000000; 
             ps1.Display();
-            ps2.FullName = "Do Thu Thuy";
-            ps2.Address = "Nam Dinh";
-            ps2.Age = 22;
+            ps2.manhanvien = 22;
+            ps2.Ten= "Do Thu Thuy";
+            ps2.Tuoi= 22;
+            ps2.Luong = 6000000;
             ps2.Display();
         }
     }
