@@ -6,9 +6,13 @@ using NEWAPP.Model;
     {
         private static void Main(string[] args)
         {
-            Person ps = new Person();
-            string str = "Do Thu Thuy";
-            int a = 22;
-            Console.WriteLine("{0} sinh nam {1}", str , ps.GetYearOfBirth(a));
+            Student ps1 = new Student();
+            Student ps2 = new Student();
+            ps1.Hoten = "Do Thu Thuy";
+            ps1.Tuoi = 21;
+            ps1.monhoc = "Hoa hoc";
+            ps1.Display();
+            ps2.Display();
+        }
         }
     }
