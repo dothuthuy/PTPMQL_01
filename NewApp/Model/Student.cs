@@ -5,10 +5,11 @@ namespace NEWAPP.Model
 public string Hoten { get ;set; }
 public int Tuoi { get; set; }
 public string monhoc { get; set; }
-public void Display2( string Hoten, int Tuoi, string monhoc)
+public int GetYearOfBirth(int Tuoi)
 {
-    System.Console.WriteLine("{0} - {1} tuoi - {2}", Hoten, Tuoi, monhoc);
-    }
+    int yearOfBirth = 2023 - Tuoi;
+    return yearOfBirth;
+}
 }
 }
 
