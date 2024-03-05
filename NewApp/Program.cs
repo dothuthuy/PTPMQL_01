@@ -6,12 +6,12 @@ using NEWAPP.Model;
     {
         private static void Main(string[] args)
         {
-             Employee ps1 = new Employee();
+            Employee ps = new Employee();
             int a = 21;
             string str = "Do Thu Thuy";
             int b = 25;
             int c =26;
-            ps.Display2(a, str, b, c);
+            Console.WriteLine("{0} - {1} - {2} - {3}", a ,str , ps.GetYearOfBirth(b) ,c  );
         }
         }
     
