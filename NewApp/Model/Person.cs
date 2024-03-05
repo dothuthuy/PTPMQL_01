@@ -19,5 +19,5 @@ public void Display2(string ten, int tuoi)
     {
     System.Console.WriteLine("{0} -{1} tuoi", ten, tuoi);
 }
-    }
+ }
 }
