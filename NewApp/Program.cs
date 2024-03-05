@@ -10,7 +10,7 @@ using NEWAPP.Model;
             string str = "Do Thu Thuy";
             int a = 22;
             string str = "hoa hoc";
-            ps.Display2{str, a,};
+            ps.Display2(str, a, str);
         }
         }
     
