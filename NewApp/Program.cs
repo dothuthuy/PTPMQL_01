@@ -6,11 +6,12 @@ using NEWAPP.Model;
     {
         private static void Main(string[] args)
         {
-             Student ps1 = new Student();
+             Employee ps1 = new Employee();
+            int a = 21;
             string str = "Do Thu Thuy";
-            int a = 22;
-            string str = "hoa hoc";
-            ps.Display2(str, a, str);
+            int b = 25;
+            int c =26;
+            ps.Display2(a, str, b, c);
         }
         }
     
