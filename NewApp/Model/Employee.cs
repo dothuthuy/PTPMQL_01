@@ -6,16 +6,12 @@ public int manhanvien { get; set; }
 public string Ten { get ;set; }
 public int Tuoi { get; set; }
 public int Luong { get; set; }
-public void EnterData()
+public Employee()
 {
-    System.Console.Write("manhanvien = ");
-    masinhvien = Convert.ToInt16(Console.ReadLine());
-    System.Console.Write("Ten = " );
-    Ten = Console.ReadLine();
-    System.Console.Write("Tuoi = ");
-    Tuoi = Convert.ToInt16(Console.ReadLine());
-    System.Console.Write("Luong = ");
-    Luong = Convert.ToInt16(Console.ReadLine());
+    manhanvien = 21;
+    Ten = "ho ten mac dinh";
+    Tuoi = 22;
+    Luong= 6000000;   
 }
 public void Display()
     {
