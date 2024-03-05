@@ -1,15 +1,24 @@
+using Your_Namespace;
+
 namespace NEWAPP.Model
 {
     public class Employee
     {
-public int manhanvien { get; set; }
-public string Ten { get ;set; }
-public int Tuoi { get; set; }
-public int Luong { get; set; }
-public int GetYearOfBirth(int Tuoi)
+public class Employee : Person
 {
-    int yearOfBirth = 2023 - Tuoi;
-    return yearOfBirth;
+    public string EmployeeCode { get; set; }
+}
+public void EnterData()
+{
+    base.EnterData();
+    System.Console.Write("Employee Code = ");
+    EmployeeCode = Console.ReadLine();
+}
+public void Display()
+{
+    base.Display();
+    System.Console.Write("- manhanvien: {0}", EmployeeCode);
 }
     }
 }
+
