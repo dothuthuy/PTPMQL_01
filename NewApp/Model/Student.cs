@@ -5,13 +5,11 @@ namespace NEWAPP.Model
 public string Hoten { get ;set; }
 public int Tuoi { get; set; }
 public string monhoc { get; set; }
-public Student()
+public void Display2( string Hoten, int Tuoi, string monhoc)
 {
-    Hoten = " Ho ten mac dinh";
-    Tuoi = 22;
-    monhoc = " mon hoc mac dinh";
-}
+    System.Console.WriteLine("{0} - {1} tuoi - {2}", Hoten, Tuoi, monhoc);
     }
+}
 }
 
 
