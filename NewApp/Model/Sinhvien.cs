@@ -26,10 +26,6 @@ public void EnterData()
     {
         Sodienthoai = 0;
     }
-public void Display()
-    {
-    System.Console.WriteLine("{0} - {1} - {2}tuoi - {3}"Hoten, Diachi, Tuoi, Sodienthoai);
-}
     }
 }
 }
