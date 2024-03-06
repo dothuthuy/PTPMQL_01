@@ -5,10 +5,20 @@ namespace NEWAPP.Model
 public string Hoten { get ;set; }
 public int Tuoi { get; set; }
 public string monhoc { get; set; }
-public int GetYearOfBirth(int Tuoi)
+ public void EnterData()
 {
-    int yearOfBirth = 2023 - Tuoi;
-    return yearOfBirth;
+    System.Console.Write("Hoten = " );
+    Hoten = Console.ReadLine();
+    System.Console.Write("Tuoi = ");
+    try{
+        Tuoi = Convert.ToInt16(Console.ReadLine());
+    }catch(Exception e)
+    {
+        Tuoi = 0;
+    }
+    System.Console.Write("monhoc = " );
+    monhoc = Console.ReadLine();
+   
 }
 }
 }
