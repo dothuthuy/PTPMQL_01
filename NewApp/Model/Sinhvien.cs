@@ -13,14 +13,23 @@ public void EnterData()
     System.Console.Write("Diachi = " );
     Diachi = Console.ReadLine();
     System.Console.Write("Tuoi = ");
-    Tuoi = Convert.ToInt16(Console.ReadLine());
+    try{
+        Tuoi = Convert.ToInt16(Console.ReadLine());
+    }catch(Exception e)
+    {
+        Tuoi = 0;
+    }
     System.Console.Write("Sodienthoai = ");
-    Sodienthoai= Convert.ToInt16(Console.ReadLine());
-    
-}
+    try{
+        Sodienthoai = Convert.ToInt16(Console.ReadLine());
+    }catch(Exception e)
+    {
+        Sodienthoai = 0;
+    }
 public void Display()
     {
     System.Console.WriteLine("{0} - {1} - {2}tuoi - {3}"Hoten, Diachi, Tuoi, Sodienthoai);
 }
     }
+}
 }
