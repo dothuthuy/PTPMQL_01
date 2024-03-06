@@ -7,9 +7,9 @@ using NEWAPP.Model;
     {
         private static void Main(string[] args)
         {
-            Employee std = new Employee();
-        std.EnterData();
-        std.Display();
+            Employee ps = new Employee();
+        ps.EnterData();
+        ps.Display();
         }
     }
     
