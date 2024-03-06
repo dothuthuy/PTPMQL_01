@@ -7,7 +7,7 @@ using NEWAPP.Model;
     {
         private static void Main(string[] args)
         {
-            Sinhvien ps = new Sinhvien();
+            Student ps = new Student();
         ps.EnterData();
         ps.Display();
         }
