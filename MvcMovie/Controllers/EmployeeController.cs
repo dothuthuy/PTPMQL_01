@@ -5,10 +5,12 @@ namespace MvcMovie.Controllers
     public class EmployeeController : Controller
     { 
         // GET: /Employee/Index
-        public string Index()
+    
+        public IActionResult Index()
         {
-            return "Nhan vien Do Thu Thuy 2021050893";
+            return View();
         }
+        
         
         // GET: /Employee/Welcome/ 
 
