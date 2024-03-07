@@ -4,7 +4,7 @@ namespace MvcMovie.Controllers
 {
     public class EmployeeController : Controller
     { 
-        // GET: /Employee/Index
+        // GET: /Employee/
     
         public IActionResult Index()
         {
