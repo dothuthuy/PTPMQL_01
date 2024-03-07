@@ -4,17 +4,10 @@ namespace MvcMovie.Controllers
 {
     public class PersonController : Controller
     { 
-        // GET: /Person/
+    
         public IActionResult Index()
         {
             return View();
-        }
-        
-        // GET: /Person/Welcome/ 
-
-        public string Welcome()
-        {
-            return "Xin chao ...";
         }
     }
 }
