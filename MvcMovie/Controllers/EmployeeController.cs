@@ -2,15 +2,15 @@ using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
 namespace MvcMovie.Controllers
 {
-    public class PersonController : Controller
+    public class EmployeeController : Controller
     { 
-        // GET: /Person/
-        public IActionResult Index()
+        // GET: /Employee/Index
+        public string Index()
         {
-            return View();
+            return "Nhan vien Do Thu Thuy 2021050893";
         }
         
-        // GET: /Person/Welcome/ 
+        // GET: /Employee/Welcome/ 
 
         public string Welcome()
         {
