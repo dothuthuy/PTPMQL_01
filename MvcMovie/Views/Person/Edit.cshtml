@@ -10,9 +10,9 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit" method="post">
-            <input asp-for="PersonId" class="form-control" type="hidden" />
+        <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PersonId" />
             <div class="form-group">
                 <label asp-for="FullName" class="control-label"></label>
                 <input asp-for="FullName" class="form-control" />
@@ -26,12 +26,6 @@
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
-            <div class="text-danger">
-                @if (ViewData["ConcurrencyErrorMessage"] != null)
-                {
-                    <p>@ViewData["ConcurrencyErrorMessage"]</p>
-                }
-            </div>
         </form>
     </div>
 </div>
@@ -41,8 +35,5 @@
 </div>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
-

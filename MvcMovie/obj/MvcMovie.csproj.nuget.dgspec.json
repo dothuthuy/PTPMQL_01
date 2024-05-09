@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PTPMQL\\MvcMovie\\MvcMovie.csproj": {}
+    "E:\\PTPMQL_01\\MvcMovie\\MvcMovie.csproj": {}
   },
   "projects": {
-    "E:\\PTPMQL\\MvcMovie\\MvcMovie.csproj": {
+    "E:\\PTPMQL_01\\MvcMovie\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PTPMQL\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "E:\\PTPMQL_01\\MvcMovie\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "E:\\PTPMQL\\MvcMovie\\MvcMovie.csproj",
+        "projectPath": "E:\\PTPMQL_01\\MvcMovie\\MvcMovie.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\PTPMQL\\MvcMovie\\obj\\",
+        "outputPath": "E:\\PTPMQL_01\\MvcMovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EPPLUS": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
