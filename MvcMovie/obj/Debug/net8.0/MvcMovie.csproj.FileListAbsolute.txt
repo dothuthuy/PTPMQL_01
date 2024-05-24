@@ -558,3 +558,6 @@ E:\PTPMQL_01\MvcMovie\bin\Debug\net8.0\EPPlus.dll
 E:\PTPMQL_01\MvcMovie\bin\Debug\net8.0\EPPlus.Interfaces.dll
 E:\PTPMQL_01\MvcMovie\bin\Debug\net8.0\EPPlus.System.Drawing.dll
 E:\PTPMQL_01\MvcMovie\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+E:\PTPMQL_01\MvcMovie\obj\Debug\net8.0\MvcMovie.MvcApplicationPartsAssemblyInfo.cs
+E:\PTPMQL_01\MvcMovie\bin\Debug\net8.0\X.PagedList.dll
+E:\PTPMQL_01\MvcMovie\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
