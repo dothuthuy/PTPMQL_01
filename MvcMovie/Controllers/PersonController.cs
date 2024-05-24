@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -7,13 +8,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie.Data;
 using MvcMovie.Models;
+using MvcMovie.Models.Process;
 
 namespace MvcMovie.Controllers
 {
     public class PersonController : Controller
+   
     {
         private readonly ApplicationDbContext _context;
-
+ private ExcelProcess _excelProcess = new ExcelProcess();
         public PersonController(ApplicationDbContext context)
         {
             _context = context;
@@ -165,5 +168,46 @@ namespace MvcMovie.Controllers
         {
             return _context.Person.Any(e => e.PersonId == id);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult>Upload (IFormFile file )
+        {
+            if(file!=null )
+            {
+                string fileExtension = Path.GetExtension(file.FileName);
+                if(fileExtension.ToLower()!=".xlsx"&&fileExtension.ToLower()!=".xls")
+                {
+                    ModelState.AddModelError("","Please choosse excel file to upload!");
+                }
+                else
+                {
+                var fileName = DateTime.Now.ToShortTimeString()+fileExtension;
+                var filePath = Path.Combine(Directory.GetCurrentDirectory()+"/Uploads/Excels",fileName);
+                var fileLocation = new FileInfo(filePath).ToString();
+                var StudentList = _context.Person.Select(e=>e.PersonId).ToList();
+                using (var stream = new FileStream(filePath,FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                    var dt = _excelProcess.ExcelToDataTable(fileLocation);
+                    for (var i=0;i<dt.Rows.Count;i++){
+                        if(!StudentList.Contains(dt.Rows[i][0])){
+                        Person ps = new Person();
+                        ps.PersonId= dt.Rows[i][0].ToString();
+                        ps.FullName=dt.Rows[i][1].ToString();
+                        ps.Address=dt.Rows[i][2].ToString();
+                        _context.Person.Add(ps);
+                        }
+                       
+                    }
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+
+            }
+      
+        }
+          return View();
+
     }
+}
 }
